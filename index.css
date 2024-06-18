@@ -1,0 +1,80 @@
+/* 
+selector
+    element
+    class
+    id
+*/
+
+p{
+    color: blue;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+#id1{
+    text-decoration: underline;
+}
+
+.parentContainerRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.parentContainerColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    border: 5px solid blue;
+    padding: 30px;
+    margin: 10px;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    height: 20px;
+    justify-content: center;
+    gap: 2px;
+    margin: 30px;
+}
+
+.profileGridContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    height: 20px;
+    justify-content: center;
+    gap: 2px;
+    margin:30px
+}
+
+.gridItem{
+    align-self: center;
+    border: 2px solid green;
+    height: 200px;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+}
+
+.gridFlexItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexName{
+    align-content: flex-start;
+}
+
+.flexPlace{
+    align-content: flex-end;
+}
