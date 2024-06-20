@@ -84,23 +84,23 @@ img {
     border: 2px solid blue;
     background-color: lightblue;
     height: 200vh;
-    margin:20px;
+    margin: 20px;
     position: relative;
 
 }
 
-.childBox{
+.childBox {
     border: 2px solid;
     height: 30px;
     margin: 5px;
 }
 
-.childOne{
+.childOne {
     background-color: yellow;
     /* position: relative;
     left: 20px;
     top: 20px; */
-    
+
     /* position: absolute;
     top:20px;
     right: 0; */
@@ -114,9 +114,32 @@ img {
     top: 30px;
 }
 
-.childTwo{
+.childTwo {
     /* position: relative;
     left: 20px;
     top: 20px; */
-    background-color:green ;
+    background-color: green;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    border:2px solid
+}
+
+.inputDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+label{
+    align-self: flex-start;
+    margin:4px ;
+}
+
+input{
+    align-self: center;
 }
