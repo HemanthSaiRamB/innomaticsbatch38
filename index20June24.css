@@ -1,0 +1,145 @@
+/* 
+selector
+    element
+    class
+    id
+*/
+
+p {
+    color: blue;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+#id1 {
+    text-decoration: underline;
+}
+
+.parentContainerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.parentContainerColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    border: 5px solid blue;
+    padding: 30px;
+    margin: 10px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 20px;
+    justify-content: center;
+    gap: 2px;
+    margin: 30px;
+}
+
+.profileGridContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 20px;
+    justify-content: center;
+    gap: 2px;
+    margin: 30px
+}
+
+.gridItem {
+    align-self: center;
+    border: 2px solid green;
+    height: 200px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+.gridFlexItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexName {
+    align-content: flex-start;
+}
+
+.flexPlace {
+    align-content: flex-end;
+}
+
+.parentDiv {
+    border: 2px solid blue;
+    background-color: lightblue;
+    height: 200vh;
+    margin: 20px;
+    position: relative;
+
+}
+
+.childBox {
+    border: 2px solid;
+    height: 30px;
+    margin: 5px;
+}
+
+.childOne {
+    background-color: yellow;
+    /* position: relative;
+    left: 20px;
+    top: 20px; */
+
+    /* position: absolute;
+    top:20px;
+    right: 0; */
+
+    /* position: fixed;
+    right: 0;
+    top:0 */
+
+    position: sticky;
+    right: 0;
+    top: 30px;
+}
+
+.childTwo {
+    /* position: relative;
+    left: 20px;
+    top: 20px; */
+    background-color: green;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    border:2px solid
+}
+
+.inputDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+label{
+    align-self: flex-start;
+    margin:4px ;
+}
+
+input{
+    align-self: center;
+}
