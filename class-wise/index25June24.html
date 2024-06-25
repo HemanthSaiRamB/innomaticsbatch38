@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <title>Innomatics</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Innomatics</h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="maincontainer">
+        <aside>
+            <h1>Side bar</h1>
+            <p>Side bar content</p>
+        </aside>
+        <main>
+            <!-- User Registratio -->
+            <section>
+                <h1>User Registration</h1>
+                <form>
+                    <label for="username">Username: </label>
+                    <input type="text" id="username">
+                    <label for="password">Password: </label>
+                    <input type="password" id="password">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email">
+                    <label for="number">Phone: </label>
+                    <input type="tel" id="number">
+                    <label for="addr">Address</label>
+                    <textarea name="address" id="addr"></textarea>
+                    <label for="gender">Gender: </label>
+                    <div id="gender">
+                        <input type="radio" id="male" name="gender"><label for="male">Male</label>
+                        <input type="radio" id="female" name="gender"><label for="female">Female</label>
+                        <input type="radio" id="other" name="gender"><label for="other">Other</label>
+                    </div>
+                    <label for="course">Course: </label>
+                    <div id="course">
+                        <input type="checkbox" id="it" name="course"><label for="it">IT</label>
+                        <input type="checkbox" id="cse" name="course"><label for="cse">CSE</label>
+                        <input type="checkbox" id="other" name="course"><label for="other">Others</label>
+                    </div>
+                    <label for="dob">Date of Birth: </label>
+                    <input type="date" id="dob">
+                    <label for="slot">Slot time</label>
+                    <input type="time" id="slot">
+                    <label for="country">Country </label>
+                    <select name="dropdown" id="country">
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                    </select>
+
+                </form>
+            </section>
+            <!-- Users Table -->
+            <section>
+                <h1>Users Table</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Email ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hemanth</td>
+                            <td>100</td>
+                            <td>heman@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Vishnu</td>
+                            <td>200</td>
+                            <td>vishnuroczz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Parimala</td>
+                            <td>100</td>
+                            <td>parimala@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <!-- ol -->
+            <section>
+                <h1>Tech Stack Section</h1>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Node</li>
+                    <li>Mongo</li>
+                </ol>
+            </section>
+            <!-- Grid -->
+            <section>
+                <h1>Grid Section</h1>
+                <div class="grid-container">
+                    <div class="grid-item">Grid 1</div>
+                    <div class="grid-item">Grid 2</div>
+                    <div class="grid-item">Grid 3</div>
+                    <div class="grid-item">Grid 4</div>
+                    <div class="grid-item">Grid 5</div>
+                    <div class="grid-item">Grid 6</div>
+                    <div class="grid-item">Grid 7</div>
+                    <div class="grid-item">Grid 8</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <h1>Footer</h1>
+        <div class="footerContainer">
+            <p class="flex-item">Contact Us</p>
+            <p class="flex-item">References</p>
+            <p class="flex-item">Careers</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

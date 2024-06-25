@@ -1,0 +1,99 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header,
+nav,
+aside,
+main,
+section,
+footer {
+    margin: 5px;
+    border: 1px solid black;
+}
+
+header {
+    background-color: aqua;
+}
+
+nav {
+    background-color: aquamarine;
+}
+
+nav ul li {
+    display: inline;
+    margin: 4px;
+    font-size: large;
+}
+
+aside {
+    width: 300px;
+    background-color: burlywood;
+}
+
+.maincontainer {
+    display: flex;
+    /* justify-content: space-between */
+    /* margin-top: 100px; */
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px
+}
+
+
+table {
+    width: 500px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 4px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: violet;
+}
+
+footer {
+    background-color: wheat;
+
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-item {
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+    color: blue
+}
+
+h1{
+    margin: 10px;
+}
