@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(77, 200, 77);
+}
+
+.box {
+    border: 1px solid rgb(204, 74, 81);
+    margin: 10px;
+    height: 30px;
+    width: 100px;
+    flex-grow: 1;
+    transition: background-color 2s ease;
+    animation: move 2s linear infinite;
+    position: relative;
+}
+
+.box:hover{
+    background-color: blue;
+}
+
+@keyframes move {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 200px;
+    }
+}
+
+
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width:500px) {
+
+    .flexcontainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        background-color: darkslategray;
+    }
+}
+
+/* in brackets conditions */
+/* @media (min-width:600px){
+
+    body {
+        background-color: rgb(173, 54, 54)
+    }
+    h1{
+        font-size: 50px;
+    }
+
+    p{
+        font-size: 30px;
+    }
+
+    span{
+        font-size: 20px;
+    }
+} */
