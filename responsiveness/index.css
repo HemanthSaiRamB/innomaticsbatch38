@@ -1,0 +1,52 @@
+/* custom properties or css variables*/
+:root{
+    ---text-color:red;
+}
+
+header {
+    background-color: turquoise;
+    /* min-height: 100px; */
+    max-height: 100%;
+}
+
+p {
+    color: var(---text-color);
+    /* color: red; */
+}
+
+ul li{
+    color: var(---text-color);
+    /* color: red; */
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em
+}
+
+ul li {
+    flex-grow: 1;
+}
+.both{
+    display: flex;
+}
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem
+}
+@media (max-width:600px){
+    img{
+        max-width: 100%;
+    }
+    .both{
+        display: block;
+        /* flex-direction: column; */
+    }
+}
