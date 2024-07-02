@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:20px
+}
+aside{
+    width: 250px;
+    background-color: aqua;
+    padding: 4em;
+    height: 100vh;
+    position: fixed;    
+}
+.carousel{
+    width: 600px;
+    height: 600px;
+}
+.carousel-item{
+    height: 500px;
+    width: 500px;
+}
+
+.carousel-item img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
