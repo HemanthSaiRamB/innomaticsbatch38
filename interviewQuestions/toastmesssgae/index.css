@@ -1,0 +1,109 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.toast-checkbox{
+    display: none;
+}
+
+.toast{
+    /* toggling */
+    visibility: hidden;
+    opacity: 0;
+
+    /* Look and feel */
+    min-width: 250px;
+    background-color: rgb(73, 59, 59);
+    border: 1px solid;
+    border-radius: 5px;
+    color: rgb(215, 215, 78);
+    text-align: center;
+    padding: 10px;
+     /* Look and feel */
+
+     /*positioning  */
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    /*positioning  */
+
+    /* transition */
+    transform: translateX(-50%);
+    transition: visibility 1s linear 0.5s opacity 0.5s linear;
+}
+
+.toast-checkbox:checked ~ .toast{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s, 0s;
+    animation: fadeInOut 5s forwards
+}
+@keyframes fadeInOut {
+    0%{
+        bottom: 0;
+        opacity: 0;
+        visibility: visible;
+    }
+    20%{
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    80%{
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    100%{
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+.close-toast{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    animation:fadeOut 5s backwards ;
+}
+
+@keyframes fadeOut {
+    0%{
+        bottom: 0;
+        opacity: 0;
+        visibility: visible;
+    }
+    20%{
+        bottom: 1;
+        opacity: 1;
+    }
+    80%{
+        bottom: 1;
+        opacity: 1;
+    }
+    100%{
+        bottom: 0;
+        opacity:0 ;
+        visibility: hidden;
+    }
+}
+
+.show-toast{
+    cursor: pointer;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.show-toast:hover{
+    background-color: rgb(142, 72, 72);
+}
