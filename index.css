@@ -1,0 +1,59 @@
+.webImageContainer {
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+}
+
+.webImageContainer img {
+    /* display: block; */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: filter 0, 5s ease;
+}
+
+.webImageContainer img:hover {
+    filter: blur(2px);
+}
+
+.titleImageContainer {}
+
+.titleImageContainer img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+}
+
+.titleImageContainer h1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+.input-overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+
+.card:hover{
+   cursor: pointer;
+   width: 90%;
+   transform: translateX(2%) scale(1.1);
+  }
