@@ -19,6 +19,7 @@ let student2 = {
     },
     'Email Id': 'he@g.com'
 }
+console.log(student2.address.pincode)
 console.log(typeof student1)
 console.log(typeof student2)
 console.log(student2.age)
