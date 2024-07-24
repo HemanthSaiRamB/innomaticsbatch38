@@ -1,0 +1,27 @@
+/*
+push
+pop
+shift
+unshift
+slice
+splice
+forEach
+map
+reduce
+filter
+findIndex
+find
+some
+*/
+
+/*
+original array is changed
+push,pop,shift,unshift,splice,forEach
+
+does not change original array and create a new array
+slice,map,filter
+
+does not change original array and create a new value
+reduce,find,findIndex,some
+
+*/
