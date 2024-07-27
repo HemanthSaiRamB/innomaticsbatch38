@@ -1,0 +1,13 @@
+// console.log(Animal.__proto__)
+// console.log(Dog.__proto__)
+// console.log(Animal.prototype)
+// console.log(Dog.prototype)
+// let abc = {greet(){}}
+
+// let xyz = {}
+// console.log(xyz.__proto__)
+// xyz = Object.create(abc)
+// // console.log(xyz.__proto__)
+// // xyz.__proto__ = abc
+// // abc.speak = true
+// // console.log(xyz.__proto__)
