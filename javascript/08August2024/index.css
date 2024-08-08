@@ -1,0 +1,20 @@
+html,body{
+    height: 100%;
+}
+.container{
+    width: 500px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardcontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.card{
+    border: 1px solid black;
+}

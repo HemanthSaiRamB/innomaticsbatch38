@@ -1,0 +1,25 @@
+callback-promises-async/await
+
+event loop
+
+
+Critical Rendering Path
+	--DOM
+
+1. Parsing HTML - compilation
+2. DOM construction - tree datastructures
+3. Parsing CSS - compilation
+4. CSSOM construction - tree datastructures
+5. Render Tree (DOM+CSSOM) - tree datastructures
+6. Layout
+7. Painting 
+
+performance optimization
+
+minification
+
+html
+css
+images
+js
+files
