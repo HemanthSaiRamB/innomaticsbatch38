@@ -1,0 +1,6 @@
+1. Form 
+    {Title -input} - {Description - textarea} - {category/tag - Dropdown} - {task priority - dropdown}
+2. State of a task - ToDo - Pending - Complete - 
+	3 radio buttons
+3. Filter - dropdown - all, completed, pending
+4. Due Date - input - date
