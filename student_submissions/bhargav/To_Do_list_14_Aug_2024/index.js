@@ -63,11 +63,15 @@ function populate_data(table_data){
         del.addEventListener('click',()=>{
             let closestcard = del.closest('.card')
             closestcard.style.backgroundColor = 'red'
-            alltodos.splice(alltodos.indexOf(table_data),1)
+            alltodos = alltodos.filter((data)=>{
+                if(data !== table_data)
+                    return data
+            })
+            // alltodos.splice(alltodos.indexOf(table_data),1)
             localStorage.setItem('alltodos',JSON.stringify(alltodos))
             setTimeout(() => {
                 closestcard.remove()
-            }, 1000);
+            }, 300);
             
         })
 
