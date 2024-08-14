@@ -32,7 +32,7 @@ div{
   justify-content: center;
   align-items: center;
 }
-#delete{
+.delete{
   background-color: red;
   color: white;
   border-radius: 10px;
