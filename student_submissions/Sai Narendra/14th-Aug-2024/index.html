@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="login-form">ToDo List <br>
+    <label for="title">title</label>
+    <input type="text" placeholder="title" id="title"><br><br>
+    <label for="description">description</label>
+    <textarea name="" id="description" style="max-width: 600px;"></textarea><br>
+    <label for="category">Category</label>
+    <select name="" id="category">
+      <option value="sports">Sports</option>
+      <option value="studies">Studies</option>
+      <option value="Hobbies">Hobbies</option>
+    </select><br>
+   <!-- <div>
+    <input type="radio" name="sateOfTask" value="ToDo">ToDo <br>
+    <input type="radio" name="sateOfTask">pending <br>
+    <input type="radio" name="sateOfTask">completed
+   </div> <br> -->
+    <label for="taskPriority">taskpriority</label>
+    <select name="taskPriority" id="taskPriority">
+      <option value="low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="high">high</option>
+    </select><br>
+    <!-- <label for="filter">filter</label>
+    <select name="" id="filter">
+      <option value=""></option>
+      <option value="">all</option>
+      <option value="">completed</option>
+      <option value="">pending</option>
+    </select><br>
+    <label for="">Due Date:</label>
+    <input type="date"> -->
+    <button type="submit" id="add">Add</button>
+  </form>
+  <div id="cardcontainer"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

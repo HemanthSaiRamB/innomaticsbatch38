@@ -1,0 +1,58 @@
+form{
+  display: grid;
+  width: 500px;
+  border: 1px solid black;
+  padding: 5px;
+  justify-content: center;
+  
+}
+.card{
+  background-color: aqua;
+  padding-left: 20px;
+}
+div{
+  border: 1px solid black;
+  margin: 5px;
+}
+#cardcontainer{
+  border: none;
+  margin: 5px;
+  width:200px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+#add{
+  background-color: rgb(48, 48, 237);
+  color: white;
+  border-radius: 10px;
+  height: 30px;
+  width: 40px;
+  box-shadow: 5px 5px 5px skyblue;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+#delete{
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+/* body{
+  justify-content: center;
+  align-items: center;
+} */
+@media(min-width:500px){
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+  }
+}
+@media(max-width:400px){
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+}
