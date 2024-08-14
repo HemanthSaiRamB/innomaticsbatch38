@@ -1,0 +1,19 @@
+form{
+    display: grid;
+    justify-content: center;
+}
+.btn{
+    text-align: center;
+    margin-top: 10px;
+}
+h2{
+    text-align: center;
+}
+#cardcontainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+}
+.cards{
+    border: 3px;
+}
