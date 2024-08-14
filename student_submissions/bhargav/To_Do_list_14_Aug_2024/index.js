@@ -42,7 +42,11 @@ function populate_data(table_data){
         
             del.addEventListener('click',()=>{
                 let closestcard = del.closest('.card')
-                closestcard.remove()
+                closestcard.style.backgroundColor = 'red'
+                console.log(closestcard)
+                setTimeout(() => {
+                    closestcard.remove()
+                }, 1000);
 
             })
 
