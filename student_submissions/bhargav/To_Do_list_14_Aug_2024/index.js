@@ -1,5 +1,14 @@
 let tbody = document.getElementById("cardcontainer")
-
+let alltodos = []
+let i = 0
+document.addEventListener("DOMContentLoaded",()=>{
+    if(localStorage.getItem('alltodos') !== null){
+        alltodos = JSON.parse(localStorage.getItem('alltodos'))
+    }
+    alltodos.forEach(todo => {
+        populate_data(todo)
+    })
+})
 document.getElementById("additemform").addEventListener("submit",(e)=>{
     e.preventDefault()
     let item = document.getElementById("work").value
@@ -12,6 +21,9 @@ document.getElementById("additemform").addEventListener("submit",(e)=>{
         category: category,
         priority: priority
     }
+    alltodos.push(obj)
+    localStorage.setItem('alltodos',JSON.stringify(alltodos))
+
     populate_data(obj)
 
     document.getElementById("additemform").reset()
@@ -29,10 +41,13 @@ function populate_data(table_data){
         let radios = document.createElement("div")
         radios.className = "radios"
         radios.innerHTML = `
-        <label for="todo">To-Do</label><input type="radio" id="todo" name="radio">
-        <label for="progress">In Progress</label><input type="radio" id="progress" name="radio">
-        <label for="complete">Completed</label><input type="radio" id="complete" name="radio">
+        <label for="todo">To-Do</label><input type="radio" id="todo" name=${i}>
+        <label for="progress">In Progress</label><input type="radio" id="progress" name=${i}>
+        <label for="complete">Completed</label><input type="radio" id="complete" name=${i}>
         `
+        // i++
+
+        // localStorage.setItem('radionum',i)
         let del = document.createElement("button")
         del.innerHTML = "Delete"
         del.className = "deleteitem"
@@ -40,15 +55,15 @@ function populate_data(table_data){
         trow.appendChild(radios)
         trow.appendChild(del)
         
-            del.addEventListener('click',()=>{
-                let closestcard = del.closest('.card')
-                closestcard.style.backgroundColor = 'red'
-                console.log(closestcard)
-                setTimeout(() => {
-                    closestcard.remove()
-                }, 1000);
+        del.addEventListener('click',()=>{
+            let closestcard = del.closest('.card')
+            closestcard.style.backgroundColor = 'red'
+            console.log(closestcard)
+            setTimeout(() => {
+                closestcard.remove()
+            }, 1000);
 
-            })
+        })
 
         tbody.appendChild(trow)
 
