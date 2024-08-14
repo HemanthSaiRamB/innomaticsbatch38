@@ -1,0 +1,61 @@
+html,body{
+    height: 100%;
+}
+
+.main{
+    text-align: center;
+}
+
+
+.additemform{
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+}
+
+.btn{
+    background: rgb(16,109,179);
+    background: linear-gradient(0deg, rgba(16,109,179,1) 0%, rgba(42,123,242,1) 100%);
+}
+
+.todolist{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.card{
+    border: 1px solid black;
+    box-shadow: 1px 2px 0.5px;
+    text-align: center;
+}
+
+.radios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 840px) {
+    .todolist{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media screen and (max-width: 630px) {
+    .todolist{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .todolist{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

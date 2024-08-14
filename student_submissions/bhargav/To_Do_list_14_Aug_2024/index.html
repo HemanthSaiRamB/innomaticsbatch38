@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- <div class="main">
+        <h1>TO-DO-LIST</h1>
+        <h3>Add your to-do Item</h3>
+        <div class="inputform">
+            <form action="#" class="additemform" id="additemform">
+                <label for="work">Name: </label><input type="text" id="work">
+                <label for="description">Description: </label><input type="textarea" id="description">
+                <button type="submit">ADD</button>
+            </form>
+        </div>
+
+        <h3>Review your to-do-list</h3>
+        <div class="todolist">
+            <select name="dropdown" id="dropdown">
+                <option value="all">ALL</option>
+                <option value="pending">PENDING</option>
+                <option value="completed">COMPLETED</option>
+            </select>
+            <div class="listcontainer" id="listcontainer"></div>
+        </div>
+    </div> -->
+    <div class="main">
+        <h1>TO-DO-LIST</h1>
+        
+        <form action="#" class="additemform" id="additemform">
+            <h3>Add your to-do Item</h3>
+            <label for="work">Name: </label><input type="text" id="work">
+            <label for="description">Description: </label><textarea id="description"></textarea>
+            <div class="drops">
+                <select id="category">
+                    <option value="studies">Studies</option>
+                    <option value="sports">Sports</option>
+                    <option value="hobbies">Hobbies</option>
+                </select>
+                <select id="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">ADD</button>
+        </form>
+
+        <h3>Review your to-do-list</h3>
+        <div class="todolist" id="cardcontainer">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
