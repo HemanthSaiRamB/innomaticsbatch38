@@ -1,0 +1,39 @@
+h2{
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+form input[type="text"],
+form textarea,
+form select,
+form input[type="date"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#card-container{
+    display: flex;
+    grid-template-columns: repeat(1,1fr);
+}
+.card{
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 40px;
+}

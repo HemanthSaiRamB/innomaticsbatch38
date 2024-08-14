@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="index_13th.css">
+</head>
+<body>
+    <h2>To-Do List</h2>
+    <form id="add-todo">
+        <label>Title:<input type="text" id="title"></label>
+        <strong>Description:</strong><textarea id="desc"></textarea>
+        <label>Category:</label>
+        <select id="category">
+            <option>Studies</option>
+            <option>sports</option>
+            <option>Hobbies</option>
+        </select>
+        <label>
+        Task Priority:
+        </label>
+        <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+        <label>
+            Filter:
+            </label>
+            <select id="filter">
+                <option>All</option>
+                <option>Completed</option>
+                <option>Pending</option>
+            </select>
+
+        <label>Due date:</label><input type="date" id="due-date">
+        <button type="submit">Add</button>
+    </form>
+ 
+    <div id="card-container">
+        
+    </div>
+    
+<script src="index_13th.js"></script>
+</body>
+</html>
