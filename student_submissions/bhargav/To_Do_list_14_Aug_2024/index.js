@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     alltodos.forEach(todo => {
         populate_data(todo)
     })
+    if(localStorage.getItem('radionum')!==null){
+        i = JSON.parse(localStorage.getItem('radionum')).radionum
+    }
 })
 document.getElementById("additemform").addEventListener("submit",(e)=>{
     e.preventDefault()
@@ -45,9 +48,11 @@ function populate_data(table_data){
         <label for="progress">In Progress</label><input type="radio" id="progress" name=${i}>
         <label for="complete">Completed</label><input type="radio" id="complete" name=${i}>
         `
-        // i++
+        i++
 
-        // localStorage.setItem('radionum',i)
+        let obj1 = {radionum:i}
+
+        localStorage.setItem('radionum',JSON.stringify(obj1))
         let del = document.createElement("button")
         del.innerHTML = "Delete"
         del.className = "deleteitem"
@@ -58,11 +63,12 @@ function populate_data(table_data){
         del.addEventListener('click',()=>{
             let closestcard = del.closest('.card')
             closestcard.style.backgroundColor = 'red'
-            console.log(closestcard)
+            alltodos.splice(alltodos.indexOf(table_data),1)
+            localStorage.setItem('alltodos',JSON.stringify(alltodos))
             setTimeout(() => {
                 closestcard.remove()
             }, 1000);
-
+            
         })
 
         tbody.appendChild(trow)
