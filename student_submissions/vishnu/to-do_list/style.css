@@ -1,0 +1,57 @@
+body{
+    background-color: #f4f4f4;
+
+}
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+#mainDiv{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+form{
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    border-color: #ddd;
+    width: 30%;
+}
+#title{
+    width: 100%;
+    height: 30px;
+}
+#description{
+    width: 100%;
+    height: 50px;
+}
+form > div{
+    padding: 15px;
+}
+button{
+    border-radius: 5px;
+    width: 100px;
+    color: white;
+    background-color: green;
+}
+#cardsContainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+#cardsContainer div {
+    border: 1px solid #ddd;
+    /* border-color: #ddd; */
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 5px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+#cardsContainer div:hover {
+    transform: translateY(-5px);
+}
+
