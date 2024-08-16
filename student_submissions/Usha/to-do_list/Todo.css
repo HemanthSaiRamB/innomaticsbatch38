@@ -1,0 +1,35 @@
+.content{
+    width: max-content;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+}
+.items{
+    height: 20px;
+}
+#radio{
+    width: 100px;
+}
+select{
+    
+    height: 30px;
+}
+#button{
+    width: max-content;
+    margin: auto;
+}
+.cardElement{
+    height: min-content;
+    /* width: 200px; */
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+#mainDiv{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+}
+#nameInput,#DisInput,#update{
+    display: none;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Todo.css">
+</head>
+<body>
+    <div id="main">
+        <div class="content">
+            <form id="Data">
+                <div style="text-align: center;">
+                    <h2>Todo List</h2>
+                </div>
+                <label for="">Enter Input:</label>
+                <br>
+                <input id="inputData" type="text" placeholder="Enter the data">
+                <br>
+                <label  for="">Description:</label>
+                <br>
+                <textarea name="" id="Text" placeholder="textarea"></textarea>
+               <br>
+                <label for="">Category:</label>
+                <select name="" id="select1">
+                    <option class="items" value="Studies">Studies</option>
+                    <option class="items" value="sports">Sports</option>
+                    <option class="items" value="hobbies">Hobbies</option>
+                </select>
+                <!-- <br> -->
+                <label style="margin-left: 10px;" for="">Priority:</label>
+                <select name="" id="select2" >
+                    <option class="items" value="low">Low</option>
+                    <option class="items" value="Medium">Medium</option>
+                    <option class="items" value="high">High</option>
+                </select>
+                <br>
+                <br>
+                <!-- <div id="radio">
+                    <label style="font-size: 20px;" for="">Select</label>
+                    <br>
+                    <label for="">All</label>
+                    <input style="float: right;" type="radio">
+                    <br>
+                    <label for="">Completed</label>
+                    <input style="float: right;" type="radio">
+                    <br>
+                    <label for="">Pending</label>
+                    <input style="float: right;" type="radio">
+                </div> -->
+                
+                
+                <!-- <br>
+                <label for="">Due date</label>
+                <input type="datetime"> -->
+            </form>
+            <button id="button" type="submit" onclick="">Add Data</button>
+        </div>
+        
+    </div>
+    <div id="mainDiv"></div>
+   <script src="Todo.js"></script>
+</body>
+</html>
