@@ -16,6 +16,7 @@ let monthDropDownOptions = [
 let selectDrop = document.getElementById("monthdropdown")
 const addWeekBtn = document.getElementById('addWeekBtn')
 const weeklyFormsContainer = document.getElementById("weeklyFormsContainer")
+const monthlyIncome = document.getElementById("monthlyIncome")
 
 document.addEventListener("DOMContentLoaded", () => {
     monthDropDownOptions.forEach(month => {
@@ -29,6 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
 selectDrop.addEventListener('change', () => {
     if (selectDrop.value !== '') {
         addWeekBtn.style.display = 'block'
+        const monthIncomeForm = document.createElement('form')
+        const dropdownValue = selectDrop.value
+        const montIndex = monthDropDownOptions.findIndex(month => month.value === dropdownValue)
+        monthIncomeForm.innerHTML = `
+                <label for=${monthDropDownOptions[montIndex].value}>Enter Income(/Month)</label>
+                <input type="text" id="${monthDropDownOptions[montIndex].value}">
+            `
+        monthlyIncome.appendChild(monthIncomeForm)
     } else {
         addWeekBtn.style.display = 'none'
     }
@@ -52,7 +61,7 @@ addWeekBtn.addEventListener('click', () => {
             <button>Submit</button>
         `
         weeklyFormsContainer.appendChild(weekForm)
-    }else{
+    } else {
         alert('No of weeks can only be 4')
     }
 
