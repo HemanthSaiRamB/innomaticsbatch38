@@ -17,7 +17,12 @@ let selectDrop = document.getElementById("monthdropdown")
 const addWeekBtn = document.getElementById('addWeekBtn')
 const weeklyFormsContainer = document.getElementById("weeklyFormsContainer")
 const monthlyIncome = document.getElementById("monthlyIncome")
-
+let dropdownValue = ''
+let montIndex = -1
+let dropdownValueObj = {
+    prevValue: '',
+    currentValue: ''
+}
 document.addEventListener("DOMContentLoaded", () => {
     monthDropDownOptions.forEach(month => {
         const monthOption = document.createElement('option')
@@ -27,19 +32,28 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
-selectDrop.addEventListener('change', () => {
+selectDrop.addEventListener('change', (e) => {
+    console.log(e.target.value)
+    dropdownValue = selectDrop.value
+    montIndex = monthDropDownOptions.findIndex(month => month.value === dropdownValue)
+    dropdownValueObj.prevValue = dropdownValueObj.currentValue
+    dropdownValueObj.currentValue = dropdownValue
     if (selectDrop.value !== '') {
+        console.log(`in if => ${monthDropDownOptions[montIndex].value}`)
         addWeekBtn.style.display = 'block'
         const monthIncomeForm = document.createElement('form')
-        const dropdownValue = selectDrop.value
-        const montIndex = monthDropDownOptions.findIndex(month => month.value === dropdownValue)
+        monthIncomeForm.setAttribute("id", `${monthDropDownOptions[montIndex].value}`)
         monthIncomeForm.innerHTML = `
                 <label for=${monthDropDownOptions[montIndex].value}>Enter Income(/Month)</label>
                 <input type="text" id="${monthDropDownOptions[montIndex].value}">
             `
         monthlyIncome.appendChild(monthIncomeForm)
     } else {
+        // console.log(`in else => ${monthDropDownOptions[montIndex].value}`)
+        console.log(dropdownValueObj)
         addWeekBtn.style.display = 'none'
+        let monthToRemove = document.getElementById(`${dropdownValueObj.prevValue}`)
+        monthToRemove.remove()
     }
 })
 
